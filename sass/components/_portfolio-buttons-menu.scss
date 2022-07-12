@@ -13,8 +13,9 @@ margin-right: 8px;
 margin-right: 0;
 }
 }
+}
 
-&__button {
+.portfolio-menu__button {
     cursor: pointer;
     padding: 6px 22px;
     border-radius: 4px;
@@ -32,18 +33,17 @@ margin-right: 0;
 
 &:hover,
 &:focus {
-    color: $text-secondary-color;
-    background-color: var(--button-background-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: $text-secondary-color;
+        background-color: $button-background-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
     }
+}
 
-    /* активность кнопки в меню портфолио */
-&--active {
+
+/* активность кнопки в меню портфолио */
+.portfolio-menu__button--active {
     background-color: $button-background-color;
     color: $text-secondary-color;
 }
-}
-}
-
     

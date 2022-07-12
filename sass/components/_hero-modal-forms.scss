@@ -11,18 +11,19 @@
     margin-bottom: 10px;
 
     &__field {
-    width: 100%;
-    height: 40px;
-    padding-left: 42px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-     border: 1px solid rgba(33, 33, 33, 0.2);
-     border-radius: 4px;
-     outline: transparent;
-     .modal-input:focus-within & {
-     border-color: $accent-color;
-}
-}
+        width: 100%;
+        height: 40px;
+        padding-left: 42px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: transparent;
+
+        .modal-input:focus-within & {
+            border-color: $accent-color;
+        }
+    }
 }
 
 
@@ -33,14 +34,24 @@
     left: 15px;
     fill: black;
     transform: translateY(-50%);
-    
-.modal-input:focus-within & {
- fill: $accent-color;
-}
+
+    .modal-input:focus-within & {
+        fill: $accent-color;
+    }
 }
 
 .modal-textarea {
     margin-bottom: 20px;
+}
+
+.modal-textarea-field {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: transparent;
 }
 
 .modal-textarea-field::placeholder {
